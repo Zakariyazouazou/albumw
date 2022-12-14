@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { HiOutlineHashtag, HiOutlineHome, HiOutlineMenu, HiOutlinePhotograph, HiOutlineUserGroup } from 'react-icons/hi';
 import { RiCloseLine } from 'react-icons/ri';
-
+import './Sidebar.css'
 import { logo } from '../assets';
 
 const links = [
@@ -46,11 +46,11 @@ const Sidebar = () => {
 
 
      {/* Mobile sidebar */}
-     <div className='absolute md:hidden block top-6 right-3'>
+     <div className='absolute md:hidden block top-6 right-3 p-2 bg-white rounded-full ' style={{zIndex:"200"}}>
        {!mobileMenuOpen ?(
-          <HiOutlineMenu className='w-6 h-6 mr-2 text-white z-50' onClick={()=>setMobileMenuOpen(true)}/>
+          <HiOutlineMenu className='w-6  h-6  text-black z-50 cursor-pointer' onClick={()=>setMobileMenuOpen(true)}/>
        ):
-       <RiCloseLine className='w-6 h-6 mr-2 text-white z-50' onClick={()=>setMobileMenuOpen(false)}/>
+       <RiCloseLine className='w-6  h-6  text-black z-50 cursor-pointer' onClick={()=>setMobileMenuOpen(false)}/>
        }
      </div>
 

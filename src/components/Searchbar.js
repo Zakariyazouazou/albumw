@@ -30,7 +30,7 @@ const Searchbar = ({placeHolder , data}) => {
   };
   return (
         
-        <div>
+        <div className="inmediaScreen">
         <form>   
                 <div className="absolute z-10 ml-56 top-2">
                     <div className="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
